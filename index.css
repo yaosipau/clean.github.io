@@ -1,0 +1,336 @@
+@font-face {
+    font-family: Bebas; /* Имя шрифта */
+    src: url(font/Bebas.otf); /* Путь к файлу со шрифтом */
+}
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+li {
+	list-style: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+a {text-decoration: none;}
+body {font-family: 'Open Sans', sans-serif;}
+img {vertical-align: bottom;}
+button {
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+/*#################################################################################*/
+header {
+	background-image: url(pic/header-bg.jpg);
+	background-size: cover;
+	background-position: 50% 50%;
+}
+.header-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 60px 0 200px;
+}
+.header-top {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.header-nav ul {padding-top: 20px;}
+.header-nav ul li a {
+	font-family: 'Bebas';
+	font-size: 24px;
+	line-height: 29px;
+	color: #fff;
+	padding: 18px;
+	padding-bottom: 8px;
+	border-bottom: 4px solid transparent;
+}
+.header-nav ul li a:hover {border-bottom: 4px solid #fff;}
+.bars {display: none;}
+.header-text {
+	max-width: 740px;
+	color: #fff;
+}
+.header-text span {
+	color: #d25b38;
+}
+.header-text h1 {
+	font-family: 'Bebas';
+	font-size: 95px;
+	line-height: 88px;
+	padding-top: 160px;
+	text-transform: uppercase;
+}
+.header-text p {
+	font-size: 25px;
+	font-style: italic;
+	padding: 50px 0 80px 15px;
+}
+header button {
+	margin: 0 10px 0 15px;
+	padding: 15px 50px;
+	border: 5px solid #fff;
+	background: transparent;
+	color: #fff;
+	font-family: 'Bebas';
+	font-size: 20px;
+	letter-spacing: .5px;
+	-webkit-transition: .5s;
+	transition: .5s;
+}
+header button:hover {
+	background: #d25b38;
+	border-color: #d25b38;
+}
+/*#################################################################################*/
+
+#about {
+	background: #fff;
+	color: #454443;
+}
+.about-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.about-container-left {
+	max-width: 345px;
+	padding: 95px 0 105px;
+}
+.about-container-left span {
+	color: #d25b38;
+}
+.about-container-left h2 {
+	font-family: 'Bebas';
+	font-size: 87px;
+	line-height: 81px;
+	text-transform: uppercase;
+}
+.about-container-left p {
+	color: #636363;
+	font-size: 16px;
+	line-height: 24px;
+	padding-top: 40px;	
+}
+.about-container-right {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: calc(100% - 345px);
+}
+.about-container-right-image {
+	width: 395px;
+	background: #d25b38;	
+	position: relative;
+	z-index: 1;
+	color: #fff;
+	padding: 15px 0;
+}
+.about-container-right-image:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	background: url(pic/about.jpg);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: .5;
+	z-index: -1;
+}
+.about-container-right-image-item {
+	font-family: 'Bebas';
+	text-align: right;
+	line-height: 37px;
+	padding: 50px 60px;
+	text-transform: uppercase;
+}
+.about-container-right-image-item:not(:last-child):after {
+	content: '';
+	position: absolute;
+	width: 275px;
+	height: 1px;
+	background: #fff;
+	right: 0;
+	margin-right: 60px;
+	margin-top: 45px;
+}
+.about-container-right-image-item h2 {font-size: 40px;}
+.about-container-right-image-item h3 {font-size: 25px;}
+.about-container-right-text {
+	width: calc(100% - 395px);
+	position: relative;
+	color: #636363;
+	padding: 15px 0;
+}
+.about-container-right-text-item {
+	padding: 50px 0 25px 60px;
+	font-size: 16px;
+	line-height: 24px;
+}
+.about-container-right-text-item:before {
+	width: 60px;
+	height: 60px;
+	border: 10px solid #e69e97;
+	border-radius: 50%;
+	content: url(pic/icon.png);
+	position: absolute;
+	background: #fff;
+	margin-left: -100px;
+	z-index: 3;
+	text-align: center;
+	line-height: 75px;
+}
+/*#################################################################################*/
+#services {
+	background: #f4f2f2;
+}
+.services-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 85px 15px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.services-container-left {
+	position: relative;
+	width: 345px;
+}
+.services-container-left span {
+	color: #d25b38;
+}
+.services-container-left h2 {
+	font-family: 'Bebas';
+	font-size: 87px;
+	line-height: 81px;
+	text-transform: uppercase;
+	padding: 400px 90px 0 0;	
+}
+.services-container-right {
+	width: calc(100% - 345px);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-ms-flex-line-pack: justify;
+	    align-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+
+}
+.services-container-right-item {
+	width: 32%;
+	background: #fff;
+	text-align: center;
+	padding: 0 30px;	
+}
+.services-container-right-item-img {
+	padding: 40px 0;
+}
+.services-container-right-item h3 {
+	font-family: 'Bebas';
+	font-size: 25px;
+	line-height: 37px;
+	text-transform: uppercase;
+	color: #d25b38;
+}
+.services-container-right-item p {
+	color: #636363;
+	font-size: 16px;
+	line-height: 24px;
+	padding-bottom: 25px;
+}
+/*#################################################################################*/
+#design {
+	background: #fff;
+}
+.design-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 85px 15px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.design-container-left {
+	width: 345px;
+	position: relative;
+}
+.design-container-left span {
+	color: #d25b38;
+}
+.design-container-left h2 {
+	font-family: 'Bebas';
+	font-size: 87px;
+	line-height: 81px;
+	text-transform: uppercase;
+	padding: 400px 90px 0 0;
+}
+.design-container-right {
+	width: calc(100% - 345px);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.design-container-right-blog {
+	width: 66.66666666%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+.design-container-right-image {
+	width: 33.33333333%;
+	background: url(pic/blog-image.jpg);
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+/*#################################################################################*/
+@media screen and (max-width: 768px){
+	.bars {
+		display: block;
+		font-size: 32px;
+		line-height: 36px;
+		cursor: pointer;		
+		color: #f5f5f5;
+	}
+	.header-nav ul {
+		display: none;
+		position: absolute;
+		right: 0;
+		top: 120px;
+		z-index: 10;
+		width: 100%;
+		text-align: right;
+		background: rgba(17,116,158,0.8);
+	}
+	.header-nav ul li {
+		display: block;
+	}
+	.header-nav ul li a {
+		padding: 2px 25px;
+		line-height: inherit;
+	}	
+}	
